@@ -4,7 +4,7 @@
   <form (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
     <div class="form-group">
 
-      <label for="userName">Username</label>
+      <label for="userName">Username:</label>
       <input type="text" required class="form-control" id="userName" [(ngModel)]="newQuote.userName" name="userName"
         #userName='ngModel' required>
       Display {{newQuote.userName}}
@@ -15,7 +15,7 @@
     </div>
     <div class="form-group">
 
-      <label for="quote">Quote</label>
+      <label for="quote">Quote:</label>
       <textarea class="form-control" id="quote" rows="4" required [(ngModel)]="newQuote.quote" name="quote"
         #quote='ngModel' required></textarea>
       <div [hidden]="quote.valid || quote.pristine" class="alert alert-danger">
