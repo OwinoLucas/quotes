@@ -1,0 +1,17 @@
+<div class="container">
+  <h1>Quotes App</h1>
+  <hr>
+  <div class="row">
+    <div class="col-md-6">
+      <ul>
+        <li *ngFor='let quote of quotes'>
+          {{quote.userName}}
+          <app-quote-section [quotes]='quote' (isDeleted)=quoteDelete($event,i)></app-quote-section>
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-6">
+      <app-quotes-form (addQuote)="addNewQuote($event)"></app-quotes-form>
+    </div>
+  </div>
+</div>
