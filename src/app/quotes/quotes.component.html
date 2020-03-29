@@ -6,7 +6,9 @@
       <ul>
         <li *ngFor='let quote of quotes'>
           {{quote.userName}}
-          <app-quote-section [quotes]='quote' (isDeleted)=quoteDelete($event,i)></app-quote-section>
+          <app-quote-section [quotes]='quote' (isDeleted)='quoteDelete($event,i)'></app-quote-section><br>
+          <button class="btn btn-primary" (click)='upVote()'> upVote <span>{{upVotes}}</span></button>&nbsp;&nbsp;
+          <button class="btn btn-primary" (click)='downVote()'> downVote <span>{{downVotes}}</span></button>
         </li>
       </ul>
     </div>
