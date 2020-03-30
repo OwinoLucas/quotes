@@ -10,8 +10,8 @@ import { Quotes } from '../quotes';
 export class QuotesComponent implements OnInit {
 
   quotes: Quotes[] = [
-    { id: 1, userName: 'L.O.Oading', quoteSection: 'Some niggas fade away,some niggas hit the jumper.' },
-    { id: 2, userName: 'Kyrie Irving', quoteSection: 'Ball is life' }
+    new Quotes(1, 'L.O.Oading', 'Some niggas fade away,some niggas hit the jumper.', new Date(2020, 3, 12)),
+    new Quotes(2, 'Kyrie Irving', 'Ball is life', new Date(2012, 12, 13))
   ];
 
   quoteDelete(isDeleted, i) {

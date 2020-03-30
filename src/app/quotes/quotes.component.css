@@ -1,5 +1,9 @@
 .img1 {
   background-image: url("../../assets/img2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  font-size: larger;
   color: white;
   padding: 9%;
   margin-top: 4px;
@@ -7,6 +11,13 @@
 }
 
 .container {
-  background-image: url("../../assets/img4.jpg");
+  background-image: url("../../assets/img8.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  font-size: larger;
+  font-weight: bold;
+  z-index: 1;
   color: white;
+
 }
