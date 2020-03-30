@@ -4,7 +4,7 @@
   <div class="row">
     <div class="col-md-6">
       <ul>
-        <li *ngFor='let quote of quotes'>
+        <li *ngFor='let quote of quotes;let i = index'>
           {{quote.userName}} &nbsp;&nbsp;{{quote.timePassed|time}} ago.
           <app-quote-section [quotes]='quote' (isDeleted)='quoteDelete($event,i)'></app-quote-section><br><br>
           <button class="btn btn-primary" (click)='upVote()'> upVote <span>{{upVotes}}</span></button>&nbsp;&nbsp;
