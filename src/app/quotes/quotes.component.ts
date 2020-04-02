@@ -29,14 +29,14 @@ export class QuotesComponent implements OnInit {
     quotes.timePosted = new Date(quotes.timePosted)
     this.quotes.push(quotes)
   }
-  upVotes: number = 0;
-  upVote() {
-    this.upVotes = this.upVotes + 1;
+  upVotes
+  upVote(i: string | number) {
+    this.upVotes[i].upVotes + 1;
 
   }
-  downVotes: number = 0;
-  downVote() {
-    this.downVotes = this.downVotes + 1;
+  downVotes
+  downVote(i: string | number) {
+    this.downVotes[i].downVotes + 1;
   }
 
 
