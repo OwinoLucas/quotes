@@ -11,7 +11,7 @@ export class QuotesComponent implements OnInit {
 
   quotes: Quotes[] = [
     new Quotes(1, 'L.O.Oading', 'Some niggas fade away,some niggas hit the jumper.', new Date(2020, 3, 12)),
-    new Quotes(2, 'Kyrie Irving', 'Ball is life', new Date(2012, 12, 13))
+    new Quotes(2, 'Kyrie Irving', 'Ball is life', new Date(2019, 12, 13))
   ];
 
   quoteDelete(isDeleted, i) {
@@ -26,9 +26,9 @@ export class QuotesComponent implements OnInit {
   addNewQuote(quotes) {
     let quoteLength = this.quotes.length;
     quotes.id = quoteLength + 1;
+    quotes.timePosted = new Date(quotes.timePosted)
     this.quotes.push(quotes)
   }
-
   upVotes: number = 0;
   upVote() {
     this.upVotes = this.upVotes + 1;

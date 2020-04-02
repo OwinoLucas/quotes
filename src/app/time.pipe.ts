@@ -7,15 +7,27 @@ export class TimePipe implements PipeTransform {
 
   transform(value: any): number {
 
-    let time: Date = new Date();//Get current date and time
-    let timeWithNoDate: any = new Date(time.getTime())//get time alone
+    let time: Date = new Date();
+    let timeOnTime: any = new Date(
+      time.getFullYear(),
+      time.getMonth(),
+      time.getDate(),
+      time.getHours(),
+      time.getMinutes(),
+      time.getSeconds()
+    );
+    var dateDiff = Math.abs(timeOnTime - value)
+    const secInDay = 86400
+    var dateDiffSec = dateDiff * 0.001;
+    var timeAgo = dateDiffSec / secInDay;
 
-    //var timeDiff = Math.abs(timeWithNoDate - value)//time diff in millisec
-    //var timeDiffMin = timeDiff * 1.6667e-5; //converts millisec to mins
-    //const minsInDay = 1440//mins in a day
-    // //var timeAgo = timeDiffMin / minsInDay;
-    // if (timeAgo >= 1 && timeWithNoDate > value) {
-    return timeWithNoDate;
+    if (timeAgo >= 1 && value > timeOnTime) {
+      return timeAgo
+    }
+    else {
+      return 0
+    }
+
 
   }
 

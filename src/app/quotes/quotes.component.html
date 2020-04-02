@@ -5,8 +5,8 @@
     <div class="col-md-6">
       <ul>
         <li *ngFor='let quote of quotes;let i = index'>
-          {{quote.userName}} &nbsp;&nbsp;{{quote.timePassed|time}} ago.
-          <app-quote-section [quotes]='quote' (isDeleted)='quoteDelete($event,i)'></app-quote-section><br><br>
+          {{quote.userName}} <span class="blockquote-footer"> posted {{quote.timePosted | time}} seconds ago.</span>
+          <app-quote-section [quotes]='quote' (isDeleted)='quoteDelete($event,i)'></app-quote-section>
           <button class="btn btn-primary" (click)='upVote()'> upVote <span>{{upVotes}}</span></button>&nbsp;&nbsp;
           <button class="btn btn-primary" (click)='downVote()'> downVote <span>{{downVotes}}</span></button>
         </li>
