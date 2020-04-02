@@ -10,8 +10,9 @@ import { Quotes } from '../quotes';
 export class QuotesComponent implements OnInit {
 
   quotes: Quotes[] = [
-    new Quotes(1, 'L.O.Oading', 'Some niggas fade away,some niggas hit the jumper.', new Date(2020, 2, 12)),
-    new Quotes(2, 'Kyrie Irving', 'Ball is life', new Date(2019, 12, 13))
+    new Quotes(1, 'Lil Wayne', 'Some niggas fade away,some niggas hit the jumper.', new Date(2020, 2, 12), 0, 0),
+    new Quotes(2, 'Kyrie Irving', 'Ball is life', new Date(2019, 12, 13), 0, 0),
+    new Quotes(3, 'Kobe Bryant', 'Heros come and go but legends live forever', new Date(2019, 0, 26), 0, 0)
   ];
 
   quoteDelete(isDeleted, i) {
@@ -29,15 +30,7 @@ export class QuotesComponent implements OnInit {
     quotes.timePosted = new Date(quotes.timePosted)
     this.quotes.push(quotes)
   }
-  upVotes
-  upVote(i: string | number) {
-    this.upVotes[i].upVotes + 1;
 
-  }
-  downVotes
-  downVote(i: string | number) {
-    this.downVotes[i].downVotes + 1;
-  }
 
 
 

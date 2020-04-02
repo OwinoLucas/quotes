@@ -15,6 +15,7 @@ export class QuoteSectionComponent implements OnInit {
     this.isDeleted.emit(Deleted)
   }
 
+
   constructor() { }
 
   ngOnInit() {
