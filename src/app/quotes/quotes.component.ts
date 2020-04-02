@@ -10,7 +10,7 @@ import { Quotes } from '../quotes';
 export class QuotesComponent implements OnInit {
 
   quotes: Quotes[] = [
-    new Quotes(1, 'L.O.Oading', 'Some niggas fade away,some niggas hit the jumper.', new Date(2020, 3, 12)),
+    new Quotes(1, 'L.O.Oading', 'Some niggas fade away,some niggas hit the jumper.', new Date(2020, 2, 12)),
     new Quotes(2, 'Kyrie Irving', 'Ball is life', new Date(2019, 12, 13))
   ];
 

@@ -12,20 +12,18 @@ export class TimePipe implements PipeTransform {
       time.getFullYear(),
       time.getMonth(),
       time.getDate(),
-      time.getHours(),
-      time.getMinutes(),
-      time.getSeconds()
+
     );
-    var dateDiff = Math.abs(timeOnTime - value)
+    var dateDiff = Math.abs(value - timeOnTime)
     const secInDay = 86400
     var dateDiffSec = dateDiff * 0.001;
     var timeAgo = dateDiffSec / secInDay;
 
-    if (timeAgo >= 1 && value > timeOnTime) {
+    if (timeAgo >= 1 && value < timeOnTime) {
       return timeAgo
     }
     else {
-      return 0
+      return value
     }
 
 
