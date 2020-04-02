@@ -9,6 +9,7 @@ import { QuoteSectionComponent } from './quote-section/quote-section.component';
 import { QuotesFormComponent } from './quotes-form/quotes-form.component';
 import { TimePipe } from './time.pipe';
 import { VotesComponent } from './votes/votes.component';
+import { HighlighDirective } from './highligh.directive';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { VotesComponent } from './votes/votes.component';
     QuotesFormComponent,
     TimePipe,
     VotesComponent,
+    HighlighDirective,
   ],
   imports: [
     BrowserModule,

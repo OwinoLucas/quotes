@@ -3,13 +3,14 @@
   <hr>
   <div class="row">
     <div class="col-md-6">
-      <ul>
-        <li *ngFor='let quote of quotes;let i = index'>
-          {{quote.userName}} <span class="blockquote-footer"> posted {{quote.timePosted|time}} days ago.</span>
-          <app-quote-section [quotes]='quote' (isDeleted)='quoteDelete($event,i)'></app-quote-section>
-          <app-votes></app-votes>
-        </li>
-      </ul>
+      <div *ngFor='let quote of quotes;let i = index'>
+        <li appHighligh> {{quote.userName}} <span class="blockquote-footer"> posted {{quote.timePosted|time}} days
+            ago.</span></li>
+
+
+        <app-quote-section [quotes]='quote' (isDeleted)='quoteDelete($event,i)'></app-quote-section>
+        <app-votes></app-votes>
+      </div>
     </div>
     <div class="col-md-6">
       <app-quotes-form (addQuote)="addNewQuote($event)"></app-quotes-form>
