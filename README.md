@@ -1,7 +1,7 @@
 # Quotes App
 #### By Lucas Otieno Owino
 ## Description
-An application where users can create quotes and have those quotes voted on whether they are terrible or are inspirational. 
+An application where users can create quotes and have those quotes voted on whether they are terrible or are inspirational via Angular. 
 ## Requirements
 * Create a new quote.
 * Upvote or downvote a quote.
