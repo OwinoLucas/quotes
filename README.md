@@ -16,7 +16,7 @@ Each quote must begin with an initial upvote and downvote value of 0
 * project should have a component to display the quote and a component to display quote details. For example, the quote details could have the author of the quote and the votes it has.
 * project should contain a custom pipe that shows how much time has passed since the quote was created. 
 ## Link to live site
-[https://owinolucas.github.io/quotes/.](link)
+[https://inspiring-kilby-19236c.netlify.com](link)
 ## License
 Copyright (c) [2020] [Lucas Otieno]
 
