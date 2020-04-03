@@ -8,7 +8,7 @@
       <div *ngFor='let quote of quotes;let i = index'>
         <li appHighligh> {{quote.userName}} <span class="blockquote-footer"> posted {{quote.timePosted|time}} days
             ago.</span></li>
-        <span class="blockquote-footer">{{quote.author}}</span>
+        <span id="aa" class="blockquote-footer">{{quote.author}}</span>
         <app-quote-section [quotes]='quote' (isDeleted)='quoteDelete($event,i)'></app-quote-section>
         <app-votes></app-votes>
       </div>

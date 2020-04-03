@@ -26,3 +26,9 @@
 .blockquote-footer {
   color: black;
 }
+
+#aa {
+  color: darkgrey;
+  font-size: 12px;
+  list-style-type: none;
+}

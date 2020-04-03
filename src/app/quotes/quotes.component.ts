@@ -10,9 +10,9 @@ import { Quotes } from '../quotes';
 export class QuotesComponent implements OnInit {
 
   quotes: Quotes[] = [
-    new Quotes(3, 'Kobe Bryant', 'Heros come and go but legends live forever', 'Kobe Bryant', new Date(2020, 2, 12)),
-    new Quotes(2, 'Kyrie Irving', 'Ball is life', 'Kobe Bryant', new Date(2019, 12, 13)),
-    new Quotes(1, 'Lil Wayne', 'Some niggas fade away,some niggas hit the jumper.', 'Kobe Bryant', new Date(2019, 0, 26))
+    new Quotes(3, 'Lucas Otieno', 'Heros come and go but legends live forever', 'Kobe Bryant', new Date(2020, 2, 12)),
+    new Quotes(2, 'MCkenzie_02', 'Ball is life', 'Kyrie Irving', new Date(2019, 12, 13)),
+    new Quotes(1, 'Shailo_Reeves', 'Some niggas fade away,some niggas hit the jumper.', 'Lil Wayne', new Date(2019, 0, 26))
   ];
 
   quoteDelete(isDeleted, i) {
