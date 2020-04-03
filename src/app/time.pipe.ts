@@ -14,9 +14,9 @@ export class TimePipe implements PipeTransform {
       time.getMonth(),
       time.getDate(),
     );
-    var dayDiff = Math.abs(value - timeOnTime)
-    const secInDay = 86400
-    var dayDiffSec = dayDiff * 0.001;
+    var dayDiff = Math.abs(value - timeOnTime)//answer is in millisec
+    const secInDay = 86400//sec in a day
+    var dayDiffSec = dayDiff * 0.001;//convert millisec to sec
     var timeAgo = dayDiffSec / secInDay;
 
     if (timeAgo >= 1 && value < timeOnTime) {
