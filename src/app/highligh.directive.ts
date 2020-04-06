@@ -11,9 +11,9 @@ export class HighlighDirective {
     this.highlight("yellow")
   }
 
-  @HostListener("dblclick") onDoubleClicks() {
-    this.highlight("None")
-  }
+  //@HostListener("dblclick") onDoubleClicks() {
+  // this.highlight("None")
+  //}
 
   private highlight(action: string) {
     this.elem.nativeElement.style.backgroundColor = action;
